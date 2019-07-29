@@ -1,0 +1,13 @@
+#{% extends 'base.html' %}
+{% block title %} {{ title }} {% endblock title %}
+{% block body %}
+    {% if shoes %}
+        {% for kiatu in shoes %}
+            <p><a href="">{{ kiatu.name }}</a></p>
+        {% endfor %}
+    {% else %}
+        <h3>No shoes available.</h3>
+    {% endif %}
+
+
+{% endblock body %}
